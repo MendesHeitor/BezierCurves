@@ -1,0 +1,27 @@
+ALL
+
+[] "criação" da função dcasteljau -> dado um array de pontos, cria a curva e as retas
+[] escolha da estrututura que vai guardar todos os arrays de pontos
+[] colorir a curva
+[] mover pontos
+[] deleção de pontos -> right click do mouse no pontos
+[] botao de toogle de curva (frontend)
+[] botao de toogle de curva -> basicamente vai para o proximo array para que os comandos seja executados nela (backend)
+[] botão de deletar todas as curvas (frontend)
+[] botão de deletar todas as curvas -> limpa a estrutura (backend)
+[] botão de deletar a curva atual (frontend)
+[] botão de deletar a curva atual -> deleta o array corrente (backend)
+[] botão de adicionar nova curva (frontend)
+[] botão de adicionar nova curva -> cria um array vazio na nossa estrutura (backend)
+[] criação do controlador de avaliação -> slider (frontend)
+[] criação do controlador de avaliação -> altera o grau de defromação da curva (backend)
+[] criação do checkbox de mostrar/esconder pontos (frontend)
+[] criação do checkbox de mostrar/esconder pontos (backend)
+[] criação do checkbox de mostrar/esconder reta (frontend)
+[] criação do checkbox de mostrar/esconder reta (backend)
+[] criação do checkbox de mostrar/esconder curva (frontend)
+[] criação do checkbox de mostrar/esconder curva (backend)
+
+
+BRUNAO
+HEITOR
