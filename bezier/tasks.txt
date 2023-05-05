@@ -22,7 +22,7 @@ BRUNAO
 
 ============== HEITOR (05-05-22):
 
-[] botão de adicionar nova curva (frontend)
-[] botão de deletar a curva atual (frontend)
-[] botão de deletar todas as curvas (frontend)
-[] botao de toogle de curva (frontend)
+[ok] botão de adicionar nova curva (frontend)
+[ok] botão de deletar a curva atual (frontend)
+[ok] botão de deletar todas as curvas (frontend)
+[ok] botao de toogle de curva (frontend)
