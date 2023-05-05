@@ -11,13 +11,12 @@ const Sketch = () => {
   };
 
   const draw = (p) => {
-    p.background(255);
+    p.stroke(255, 0, 0); // set the stroke color to red
     p.strokeWeight(5);
-
+  
     // Draw the Bezier curve using the points in the array
     if (points.length >= 4) {
       p.noFill();
-      p.stroke(0);
       p.beginShape();
       p.vertex(points[0].x, points[0].y);
       for (let i = 1; i < points.length - 2; i++) {
@@ -31,12 +30,14 @@ const Sketch = () => {
       }
       p.endShape();
     }
-
+  
     // Draw the points on the canvas
+    p.fill(255, 255, 0); // set the fill color to yellow
     for (let i = 0; i < points.length; i++) {
       p.point(points[i].x, points[i].y);
     }
   };
+  
 
   return <SketchWrapper addPoint={addPoint} draw={draw} />;
 };
@@ -48,27 +49,30 @@ const SketchWrapper = ({ addPoint, draw }) => {
         display: 'flex',
         justifyContent: 'flex-end',
         alignItems: 'center',
-        height: '100vh', 
-        paddingRight: '50px', // add some space on the right
-        paddingLeft: '50px', // add some space on the left
+        height: '100vh',
+        paddingRight: '50px',
+        paddingLeft: '50px',
       }}
     >
-      <div ref={(ref) =>
-        new p5((p) => {
-          p.setup = () => {
-            p.createCanvas(1500, 850);
-            // Attach a mousePressed event listener to the canvas
-            p.mousePressed = () => {
-              addPoint(p);
+      <div
+        ref={(ref) =>
+          new p5((p) => {
+            p.setup = () => {
+              p.createCanvas(1500, 850);
+              p.background(16, 26, 19); // set the background color to light blue
+
+              // Attach a mousePressed event listener to the canvas
+              p.mousePressed = () => {
+                addPoint(p);
+              };
             };
 
-          };
-
-          p.draw = () => {
-            draw(p);
-          };
-        }, ref)
-      } />
+            p.draw = () => {
+              draw(p);
+            };
+          }, ref)
+        }
+      />
     </div>
   );
 };
