@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(2, 21, 21);
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-left: 10px;
+}
+
+.buttons button {
+    display: block;
+    margin-bottom: 15px;
+    background-color: #088673;
+    border-color: transparent;
+    height: 30px;
+    border-radius: auto;
+    font-weight: 600;
+
+}
+
+.buttons button:hover{
+    cursor: pointer;
+    background-color: #05453c;
+}
+
+.checkboxes label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.checkboxes input[type="checkbox"] {
+    margin-right: 5px;
+    cursor: pointer;
+}
