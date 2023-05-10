@@ -6,6 +6,15 @@ body {
     align-items: center;
 }
 
+.title {
+    position: absolute;
+    font-family: "Comic Sans MS", cursive;
+    font-size: 40px;
+    color: #ffffff;
+    top: 0px;
+    left: 580px;
+}
+
 .sidebar {
     width: 190px;
     background-color: #333;
@@ -22,10 +31,9 @@ body {
     height: 30px;
     border-radius: auto;
     font-weight: 600;
-
 }
 
-.buttons button:hover{
+.buttons button:hover {
     cursor: pointer;
     background-color: #05453c;
 }
@@ -38,4 +46,18 @@ body {
 .checkboxes input[type="checkbox"] {
     margin-right: 5px;
     cursor: pointer;
+}
+
+.slider-container {
+    margin-top: 20px;
+}
+
+.slider {
+    width: 100%;
+}
+
+.slider-value {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
 }
