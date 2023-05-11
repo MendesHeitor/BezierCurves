@@ -71,7 +71,7 @@ function mousePressed() {
   
 
 function mouseDragged() {
-  console.log(pointMoving, onPoint)
+  //console.log(pointMoving, onPoint)
   if (pointMoving && onPoint) {
     allCurves[currentCurveIndex].points[currentPointIndex].x = mouseX;
     allCurves[currentCurveIndex].points[currentPointIndex].y = mouseY;
